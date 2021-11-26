@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:padding="15dp"
+    android:id="@+id/relativeLayout">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/blue"
+        android:src="@drawable/ic_icon"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textTitle"
+        android:layout_toRightOf="@+id/imageView"
+        android:textColor="@color/blue"
+        android:text="Event Name"
+        android:paddingLeft="20dp"
+        android:foregroundGravity="center"
+        android:textSize="16dp"
+        android:paddingTop="15dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:fontFamily="monospace"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:textColor="@color/blue"
+        android:text="19/07/2018"
+        android:paddingRight="2dp"
+        android:textSize="14dp"
+        android:paddingTop="15dp"
+        android:layout_alignParentRight="true"
+        android:fontFamily="monospace"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateofevent"
+        android:layout_below="@+id/imageView"
+        android:textColor="@color/black"
+        android:text="DATE : "
+        android:foregroundGravity="center"
+        android:textSize="16dp"
+        android:paddingTop="15dp"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fetcheddate"
+      android:layout_toRightOf="@+id/dateofevent"
+        android:layout_below="@+id/imageView"
+        android:textColor="@color/black"
+        android:text="26/10/2018 "
+        android:textSize="16dp"
+        android:paddingTop="15dp"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/agenda"
+       android:layout_below="@+id/dateofevent"
+        android:textColor="@color/black"
+        android:text="AGENDA : "
+        android:foregroundGravity="center"
+        android:textSize="16dp"
+        android:paddingTop="15dp"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        />
+
+<com.borjabravo.readmoretextview.ReadMoreTextView
+    android:layout_width="match_parent"
+    android:id="@+id/desc"
+    android:layout_height="wrap_content"
+    android:text="Sep 3, 2017 - User Interface (UI) is one of the most important part of any software ... We can make border rounded, define its thickness and even change its color. ... Here we are setting the background color of the widget/layout to which the ..."
+    app:trimExpandedText="Show more"
+    android:fontFamily="sans-serif"
+    android:textSize="18dp"
+    android:paddingBottom="15dp"
+    app:trimCollapsedText="Show less"
+    app:trimMode="trimModeLength"
+    app:trimLength="120"
+    android:textColor="@color/black"
+    android:layout_below="@+id/agenda"
+    />
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/desc"
+    android:background="@color/blue"
+    android:textColor="@color/white"
+    android:text="EXPLORE"
+    android:id="@+id/btnexplore"
+    android:fontFamily="monospace"/>
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="400dp"-->
+        <!--android:layout_below="@+id/desc"-->
+        <!--android:src="@drawable/ic_icon"-->
+        <!--android:background="@drawable/border"-->
+        <!--/>-->
+  <!--  <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:textColor="@color/black"
+        android:fontFamily="monospace"
+        android:padding="2dp"
+        android:text="Sep 3, 2017 - User Interface (UI) is one of the most important part of any software ... We can make border rounded, define its thickness and even change its color. ... Here we are setting the background color of the widget/layout to which the ..." />
+-->
+
+</RelativeLayout>

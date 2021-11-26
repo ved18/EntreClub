@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_iconfinal" />
+            <!-- app:civ_border_width="2dp"
+         app:civ_border_color="#0000ff"-->
+
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="monospace"
+                android:layout_toRightOf="@+id/imageView"
+                android:paddingLeft="6dp"
+                android:paddingTop="10dp"
+                android:text="Full Name"
+                android:textColor="#76287c"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+
+                android:layout_marginLeft="80dp"
+                android:layout_toRightOf="@+id/textTitle"
+                android:background="@drawable/ic_shape"
+                android:text="Accept" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="31dp"
+
+                android:layout_marginRight="27dp"
+                android:background="@drawable/ic_shape"
+                android:text="Decline" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

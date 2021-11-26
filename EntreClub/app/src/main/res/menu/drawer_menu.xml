@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/g1"
+        >
+        <item android:id="@+id/past_events"
+            android:icon="@drawable/ic_recom"
+                android:title="Past Events">
+
+        </item>
+
+
+    </group>
+    <group android:id="@+id/g2" android:checkableBehavior="single">
+        <item android:id="@+id/about"
+          android:icon="@drawable/ic_message"
+            android:title="About Us">
+
+        </item>
+    </group>
+    <group android:id="@+id/g3" android:checkableBehavior="single">
+        <item android:id="@+id/members"
+            android:icon="@drawable/ic_position"
+            android:title="Club Members">
+
+        </item>
+    </group>
+    <group android:id="@+id/g4" android:checkableBehavior="single">
+        <item android:id="@+id/signout"
+            android:icon="@drawable/ic_action_navigation_close_inverted"
+            android:title="Sign Out">
+
+        </item>
+    </group>
+</menu>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
+
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel1">
+
+        <RelativeLayout
+            android:id="@+id/rel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue">
+
+
+            <ImageView
+                android:paddingLeft="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/backArrow"
+                android:src="@drawable/ic_backarrow"/>
+
+            <TextView
+                android:fontFamily="monospace"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="     Transaction Log of Event"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rel2">
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/event_name"
+                android:layout_width="171dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Event Name "
+                android:textSize="20dp"
+                />
+
+
+
+            <TextView
+                android:textColor="@color/blue"
+                android:id="@+id/from"
+                android:layout_width="158dp"
+                android:textSize="16dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="From :"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/event_name"
+                />
+
+
+            <EditText
+                android:id="@+id/from_user"
+                android:layout_width="349dp"
+                android:layout_height="77dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/from"
+                android:hint="Name of User"
+                android:backgroundTint="@color/grey"
+                android:textColorHint="@color/grey"
+                />
+
+            <TextView
+                android:textColor="@color/blue"
+                android:id="@+id/to"
+                android:layout_width="158dp"
+                android:textSize="16dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="To  :"
+                android:textStyle="bold"
+                android:layout_below="@+id/from_user"
+                />
+
+            <EditText
+                android:id="@+id/to_user"
+                android:layout_width="351dp"
+                android:layout_height="86dp"
+                android:hint="Name of the User"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"
+                android:layout_marginTop="0dp"
+                android:backgroundTint="@color/grey"
+                android:layout_marginBottom="20dp"
+                android:inputType="textMultiLine"
+                android:layout_below="@+id/to"
+                />
+            <TextView
+                android:textColor="@color/blue"
+                android:id="@+id/service"
+                android:layout_width="158dp"
+                android:textSize="16dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="Service Consumed :"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/to_user"
+                />
+
+
+            <EditText
+                android:id="@+id/service_consumed"
+                android:layout_width="349dp"
+                android:layout_height="77dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/grey"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:layout_below="@+id/service"
+                android:hint="Service "
+                />
+            <TextView
+                android:textColor="@color/blue"
+                android:id="@+id/amount1"
+                android:layout_width="158dp"
+                android:textSize="16dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="Amount :"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/service_consumed"
+                />
+
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="349dp"
+                android:layout_height="77dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/amount1"
+                android:backgroundTint="@color/grey"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:hint="Total transaction Cost"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/amount"
+                android:background="@color/blue"
+                android:onClick="saveLogs"
+                android:text="SUBMIT"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

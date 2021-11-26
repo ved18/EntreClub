@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel1">
+
+        <RelativeLayout
+            android:id="@+id/rel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue">
+
+            <TextView
+                android:fontFamily="monospace"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="        Minutes Of Meeting"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rel2">
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/event_name"
+                android:layout_width="171dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Event Name "
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/event_name"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+
+                android:textColor="@color/blue"
+
+                android:textSize="16dp"
+
+
+                />
+
+
+            <TextView
+                android:textColor="@color/blue"
+                android:id="@+id/decision_made"
+                android:layout_width="158dp"
+                android:textSize="16dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="Decisions Made :"
+                android:textStyle="bold"
+                android:layout_below="@+id/date"
+                />
+
+
+            <EditText
+                android:id="@+id/desc_decision"
+                android:layout_width="349dp"
+                android:layout_height="77dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/decision_made"
+                android:hint="Decisions Made"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:backgroundTint="@color/grey"
+                />
+
+            <TextView
+                android:textColor="@color/blue"
+                android:id="@+id/future_scope"
+                android:layout_width="158dp"
+                android:textSize="16dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Future Scope :"
+                android:textStyle="bold"
+                android:layout_below="@+id/desc_decision"
+                />
+
+            <TextView
+                android:textColor="@color/blue"
+                android:id="@+id/amendments"
+                android:layout_width="158dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                android:text="Amendments :"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_below="@+id/desc_future_scope"
+                />
+
+            <EditText
+                android:id="@+id/desc_remarks"
+                android:layout_width="349dp"
+                android:layout_height="81dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Remarks :"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:backgroundTint="@color/grey"
+                android:layout_below="@+id/remarks" />
+
+            <EditText
+                android:id="@+id/desc_amend"
+                android:layout_width="349dp"
+                android:layout_height="82dp"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="8dp"
+                android:hint="Amendments"
+                android:layout_below="@id/amendments"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:backgroundTint="@color/grey"/>
+
+
+
+
+            <EditText
+                android:id="@+id/desc_future_scope"
+                android:layout_width="351dp"
+                android:layout_height="86dp"
+                android:hint="Future Scope"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="textMultiLine"
+                android:layout_below="@+id/future_scope"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:backgroundTint="@color/grey"
+                />
+
+
+            <TextView
+                android:textColor="@color/blue"
+                android:id="@+id/remarks"
+                android:layout_width="168dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Remarks"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_below="@id/desc_amend"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc_remarks"
+                android:background="@color/blue"
+                android:onClick="saveMom"
+                android:text="SUBMIT"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

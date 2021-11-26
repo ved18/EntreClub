@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".Home.AboutUs">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="350dp"
+        android:layout_height="588dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="34dp"
+        android:text="We provide training in much needed core skills in innovation and productivity for business leaders and managers in areas such as leadership, internationalization, sales and marketing, finance, human resource, media, government and private funding sources. One important feature of the Entre Programme is that participants aided to draft, prepare and present their business plans. Persons who successfully completed the Entre Programme are called “Entre members” and automatically become members of The Entre Club."
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="#ffffff"
+        android:textSize="28dp"
+
+        android:text="EntreClub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

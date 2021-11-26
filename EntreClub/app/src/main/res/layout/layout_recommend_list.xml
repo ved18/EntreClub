@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:padding="15dp"
+    android:id="@+id/relativeLayout">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/blue"
+        android:src="@drawable/ic_icon"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textTitle"
+        android:layout_toRightOf="@+id/imageView"
+        android:textColor="@color/blue"
+        android:text="Sakshi Bihani"
+        android:paddingLeft="20dp"
+        android:foregroundGravity="center"
+        android:textSize="16dp"
+        android:paddingTop="15dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:fontFamily="monospace"
+        />
+
+    <Button
+        android:id="@+id/follow"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/blue"
+        android:fontFamily="monospace"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Follow"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+    <com.borjabravo.readmoretextview.ReadMoreTextView
+        android:layout_width="match_parent"
+        android:id="@+id/desc"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="CC, CN, DSBD, DAA, SP"
+        app:trimExpandedText="Show more"
+        android:fontFamily="sans-serif"
+        android:textSize="18dp"
+        android:paddingBottom="15dp"
+        app:trimCollapsedText="Show less"
+        app:trimMode="trimModeLength"
+        app:trimLength="120"
+        android:textColor="@color/black"
+        android:layout_below="@+id/imageView"
+        />
+
+
+
+</RelativeLayout>

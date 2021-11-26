@@ -1,0 +1,278 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="20dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:id="@+id/profile_photo"
+                android:layout_marginTop="20dp"
+                app:civ_border_color="@color/blue"
+                app:civ_border_width="2dp"
+                android:layout_centerHorizontal="true"/>
+
+           
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="PERSONAL INFORMATION"
+                android:layout_below="@id/profile_photo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/blue"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:id="@+id/textPrivateInfo1"/>
+
+            <!-- username section -->
+           
+
+
+            <!-- display_name section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textPrivateInfo1"
+                android:id="@+id/relLayout2"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_iconfinal"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/firstname"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:text="First Name"
+                    android:padding="10dp"
+                    android:background="@drawable/border"
+                    android:textColor="@color/blue"
+                    android:inputType="textNoSuggestions"
+                   />
+
+            </RelativeLayout>
+
+
+            <!-- website section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/relLayout2"
+                android:id="@+id/relLayout3"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_iconfinal"
+                    android:layout_centerVertical="true"/>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lastname"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:text="Last Name"
+                    android:padding="10dp"
+                    android:background="@drawable/border"
+                    android:textColor="@color/blue"
+                    android:inputType="textNoSuggestions"
+             />
+            </RelativeLayout>
+
+
+
+           
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/relLayout3"
+                android:id="@+id/relLayout8"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_iconfinal"
+                    android:layout_centerVertical="true"/>
+
+
+
+                <EditText
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:focusableInTouchMode="false"
+                    android:text="Gender"
+                    android:padding="10dp"
+                    android:background="@drawable/border"
+                    android:inputType="text"
+                    android:textColor="@color/blue"
+
+                    />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/relLayout8"
+                android:id="@+id/relLayout0"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_iconfinal"
+                    android:layout_centerVertical="true"/>
+
+
+
+                <EditText
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:focusableInTouchMode="false"
+                    android:text="City"
+                    android:padding="10dp"
+                    android:background="@drawable/border"
+                    android:inputType="text"
+                    android:textColor="@color/blue"
+
+                    />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="BUSINESS INFORMATION"
+                android:layout_below="@id/relLayout0"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:id="@+id/textPrivateInfo"/>
+
+
+            <!-- email section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/textPrivateInfo"
+                android:id="@+id/relLayout5"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Company Name: "
+                    android:id="@+id/cn"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/company"
+                    android:layout_below="@+id/cn"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:text="Company Name: "
+                    android:padding="20dp"
+                    android:background="@drawable/border"
+                    android:textColor="@color/blue"
+                    android:inputType="textNoSuggestions"
+
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/relLayout5"
+                android:id="@+id/relLayout15"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Position : "
+                    android:id="@+id/pos"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/position_in"
+                    android:layout_below="@+id/pos"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:text="Position "
+                    android:padding="20dp"
+                    android:background="@drawable/border"
+                    android:textColor="@color/blue"
+                    android:inputType="textNoSuggestions"
+
+                    />
+
+            </RelativeLayout> <!-- description section -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/relLayout15"
+                android:id="@+id/relLayout4"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Description :"
+                    android:id="@+id/des"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/description"
+                    android:layout_below="@+id/des"
+                    android:padding="20dp"
+                    android:background="@drawable/border"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:textColor="@color/blue"
+                    android:inputType="textMultiLine"
+                    android:hint="Description"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</merge>
+
